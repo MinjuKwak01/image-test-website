@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="test.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div>Teachable Machine Image Model</div>
-        <button type="button" onclick="init()">Start</button>
-                <button type="button" onclick="predict()">예측</button>
+        <div class="logo"><h1>Teachable Machine Image Model</h1></div>
+        <div class="ha">
+            <button class="button-num1" type="button" onclick="init()">Start</button>
+            <button class="button-num2" type="button" onclick="predict()">예측</button>
+        </div>
+ 
         <script
             class="jsbin"
             src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
@@ -17,7 +20,7 @@
                 type="button"
                 onclick="$('.file-upload-input').trigger( 'click' )"
             >
-                Add Image
+                사진 추가하기
             </button>
 
             <div class="image-upload-wrap">
@@ -28,14 +31,14 @@
                     accept="image/*"
                 />
                 <div class="drag-text">
-                    <h3>Drag and drop a file or select add Image</h3>
+                    <h3>사진을 여기에 드래그해서 넣으시오</h3>
                 </div>
             </div>
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
                 <div class="image-title-wrap">
                     <button type="button" onclick="removeUpload()" class="remove-image">
-                        Remove <span class="image-title">Uploaded Image</span>
+                        삭제하기 <span class="image-title">Uploaded Image</span>
                     </button>
                 </div>
             </div>
